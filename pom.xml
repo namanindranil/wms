@@ -8,14 +8,20 @@
 		<version>2.7.18</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>wms</artifactId>
+	<groupId>com.uc.wms</groupId>
+	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>WMS</name>
 	<description>WMS SpringBoot Project</description>
+	<packaging>pom</packaging>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
+	<modules>
+		<module>commons</module>
+		<module>packing</module>
+	</modules>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
